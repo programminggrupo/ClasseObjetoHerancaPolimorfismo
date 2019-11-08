@@ -1,0 +1,61 @@
+/*
+ *Programação orientada a objetos
+ *Professor: Orlewilson Bentes Maia
+ *Data: 03/11/2019
+ *Autor: Marcus Vinícius
+ *Descrição: Exemplo de classe e objeto
+ */
+package classeeobjeto;
+
+public class ClasseEObjeto {
+
+    public static void main(String[] args) {
+      Passaro p1 = new Passaro();
+      p1.cor = "azul";
+      p1.reino = "animalia";
+      p1.tamanho = 20;  
+      p1.fase = false;
+      p1.peso = 2.5f;
+     
+      p1.status();
+      p1.voar();
+     
+    }
+   
+}
+-------------------------------------------------------------------------------------------------------------
+/*
+ *Programação orientada a objetos
+ *Professor: Orlewilson Bentes Maia
+ *Data: 03/11/2019
+ *Autor: Marcus Vinícius
+ *Descrição: Exemplo de classe e objeto
+ */
+package classeeobjeto;
+
+public class Passaro {
+    String reino;
+    boolean fase;
+    String cor;
+    Float peso;
+    int tamanho;
+   
+    void status() {
+       
+        System.out.println("Um passaro " + this.cor );
+        System.out.println("De qual reino pertence esse ser? " + this.reino );
+        System.out.println("Quantos centímentros tem o passaro? " + this.tamanho);
+        System.out.println("Qual o peso dele em KG? " + this.peso);
+        System.out.println("Ele é adulto? " + this.fase);
+       
+}
+    void voar() {
+        if (this.fase == true) {
+            System.out.println("APROVADO! Ele vai conseguir voar");
+        }else{
+            System.out.println("REPROVADO!Ele ainda não sabe voar");
+        }
+       
+    }
+   
+}
